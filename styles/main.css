@@ -1,0 +1,291 @@
+/*
+  Theme colors
+    All selectors with colors that would need
+    to be changed for theme changes
+*/
+
+/*
+  COLORS
+
+  Sky
+    rgb(200,228,230)
+
+  Dark Blue
+    rgb(44, 62, 80)
+
+  Grey
+    rgb(127, 140, 141)
+
+  Cloud
+    rgb(236, 240, 241)
+*/
+
+.background--sky {
+  background-color: rgb(200,228,230);
+}
+
+.background--darkGreen {
+  background-color: rgb(20, 64, 74);
+}
+
+.color--sky {
+  background-color: rgb(200,228,230);
+}
+
+.color--darkGreen {
+  color: rgb(20, 64, 74);
+}
+
+.color--skyBlue {
+  color: rgb(52, 152, 219);
+}
+
+.color--cloud {
+  color: rgb(236, 240, 241);
+}
+
+.color--grey {
+  color: rgb(127, 140, 141);
+}
+
+.color--darkgrey {
+  color: rgb(44, 62, 80);
+}
+
+.section__example {
+  background-color: rgb(44, 62, 80);
+}
+
+/*
+  General Styles
+    These are styles to be inherited
+    through parent containers
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Cardo', serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lexend Zetta', sans-serif;
+}
+
+/*
+  Helpers
+*/
+
+.margin--none {
+  margin: 0;
+}
+
+.overflow--auto {
+  overflow: auto;
+}
+
+.main--style {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+
+/*
+  Sections
+*/
+
+.section {
+  /* display: block; */
+  font-size: 4.2rem;
+  /* min-height: 10vh; */
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 1%;
+  position: relative;
+  overflow: auto;
+}
+
+.section--alignCentered {
+  text-align: center;
+}
+
+.section__text--centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutme__title {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  left: 50%;
+}
+
+.aboutme__Description {
+  position: relative;
+  margin-top: 8%;
+  padding-bottom: 8%;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutme_Image {
+  float:left;
+  margin-left: 3%;
+  opacity: 0.75;
+  object-fit: fill;
+  width: 30rem;
+  height: 45rem;
+}
+
+.section__example {
+  display: inline;
+  /* border-radius: 100%; */
+  width: 50%;
+  height: 0;
+  padding-bottom:60%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.section__exampleRight {
+  float: right;
+}
+
+.section__exampleLeft {
+  float: left;
+}
+
+.section__example:hover .section__exampleTitle {
+  opacity: 0;
+}
+
+.section__example:hover .section__exampleDescription {
+  opacity: 1;
+}
+
+.section__example:active {
+  transition: 0.05s all;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.section__exampleTitle{
+  text-align: center;
+  width: 90%;
+  transition: 1s all;
+}
+
+.section__exampleDescription{
+  font-size: 2rem;
+  /* text-align: center; */
+  opacity: 0;
+  /* text-transform: uppercase; */
+  width: 90%;
+  transition: 1s all;
+}
+
+.section__exampleImage {
+  opacity: 0.25;
+  object-fit: fill;
+}
+
+/*
+  Header
+*/
+
+.section__heading--largest {
+  float: left;
+  font-size: 5rem;
+  margin-left: 2rem;
+  text-decoration: none;
+  transition: 0.1s all;
+}
+
+.section__heading--largest:hover {
+  color: rgb(0, 102, 153);
+}
+
+.section--social {
+  float: right;
+  line-height: 10rem;
+  margin-right: 2rem;
+}
+
+.social {
+  margin-right: 0.75rem;
+}
+
+.socialWrapper:last-child .social {
+  margin-right: 0;
+}
+
+.socialWrapper {
+  display: inline-block;
+  font-size: 3rem;
+  transition: 0.1s all;
+}
+
+.socialWrapper:hover .social {
+  color: rgb(0, 102, 153);
+}
+
+
+/*
+  Modal
+*/
+
+.modal--closed {
+  display: none;
+}
+
+.modal--open {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.modal__closeButton {
+  position: absolute;
+  right: 2rem;
+  top: 5rem;
+  font-size: 4rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.modal__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.4rem;
+  padding: 2rem;
+  width: 66%;
+}
+
+.modal__link {
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.modal__image {
+  opacity: 0.2;
+}

@@ -195,9 +195,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .section__exampleDescription{
   font-size: 2rem;
-  /* text-align: center; */
+  text-align: justify;
+  margin-left: 0rem;
   opacity: 0;
-  /* text-transform: uppercase; */
   width: 90%;
   transition: 1s all;
 }
@@ -227,13 +227,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .subpage__exampleDescription{
-  font-size: 2rem;
-  /* text-align: center; */
+  font-size: 1.8rem;
+  font-family: monospace;
+  text-align: left;
   opacity: 0;
   /* text-transform: uppercase; */
-  width: 90%;
+  width: 85%;
+  height: 85%;
   transition: 1s all;
-  text-align: center;
+  margin-left: 0rem;
+
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.subpage__exampleDescription::-webkit-scrollbar {
+    display: none;
 }
 
 .subpage__example:hover .subpage__exampleTitle {
@@ -242,6 +252,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .subpage__example:hover .subpage__exampleDescription {
   opacity: 1;
+}
+
+.subpage__example:hover .subpage__exampleImage {
+  filter: brightness(25%);
 }
 
 .subpage__exampleImage {
@@ -256,6 +270,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding-left: 7%;
+  padding-bottom: 7%;
 }
 
 /* Create four equal columns that sits next to each other */
